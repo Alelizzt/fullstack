@@ -1,0 +1,80 @@
+body {
+    background-color: #eee;
+}
+/* Links */
+a {
+    color: hotpink;
+    background-color: #F00;
+    border: solid 1px #D00;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 4px;
+}
+
+a:link { /* link normal */
+    color: pink;
+    text-decoration: none; /* sin subrayado*/
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover { /* cuando pasas el cursor encima */
+    color: cyan;
+    text-decoration: underline; /* subrayado */
+    background-color: #D00;
+}
+
+a:active { /* al hacer click */
+    color: black;
+}
+
+
+/* Listas */
+ul{
+    background-color: #fff;
+    border: solid 1px #DDD;
+    border-radius: 4px;
+    padding-left: 0px;
+    /*list-style-type: none*/
+}
+
+ul li{ /* aplicamos estilos a los li que estan contenidos en ul */
+    list-style-type: circle; /* cambia las vinietas, square, upper-roman, lower-alpha, */
+    border-bottom: solid 1px #DDD;
+    padding: 15px;
+}
+
+/* Tablas */
+
+table{
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse; /* quita los bordes, se colapsa*/
+}
+
+tr:nth-child(even){ /* selecciona las columnas, una si otra no (evenm, odd) */
+    background-color: #F2F2F2;
+}
+
+td{
+    border: 1px solid #DDD;
+    padding: 8px;
+}
+
+table th{
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
+
+
+
+

@@ -1,0 +1,45 @@
+body {
+    background-color: #eee;
+}
+
+p {
+    /*display: inline;*/
+    max-width: 350px; /*Ancho maximo*/
+    /*width: 350px; Ancho relativo, con barra */
+    background-color: #f00;
+    margin: auto;/*centrar contenido, debe estar en display none*/
+    position: relative; /*por defecto esta en static, la posicion relativa, fixed es para contenido fijo*/
+    left: 15px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+span {
+    /*display: block;*/
+}
+
+#invisible {
+    display: none;
+}
+
+#over {
+    width: 100px;
+    height: 100px;
+    overflow: scroll;/*visible por defecto, con hidden lo que no este dentro del ancho y alto no se muestra, auto agrega scroll segun se necesite*/
+    /*overflow-y: auto; sirve para el eje vertical*/
+    /*overflow-x auto; sirve para el eje horizontal*/
+
+}
+
+img {
+    float: left; /*right*/
+}
+
+img:hover {
+    opacity: 0.9;/*del 0 al 1*/
+}
+
+div p {
+    color: # F00;
+}

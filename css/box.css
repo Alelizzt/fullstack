@@ -1,0 +1,58 @@
+body {
+    background-color: #CEC5C3;/* color de fondo */
+}
+
+.caja {
+    margin: 8px; /* margenes hacia todos los lados(hacia afuera, margen exterior), centrado*/
+    padding: 8px; /* margen (hacia dentro) separa de los bordes el contenido nt*/
+    border-style: solid; /*borde entre el margin y el padding puede ser: solid, dash, dotted, double, groove, ridge, inset, outset, none, hidden y pueden ser usadas al tiempo 4 (superior, derecha, inferior, izquierda)*/
+    border-width: 8px; /*tamano del borde*/
+    border-color: #faa; /*color del borde*/
+    border-left: 6px solid #afa;/*(ancho, estilo, color) se sobreescribe el borde (siempre toma el ultimo)*/
+    /*border-top:
+    border-bottom:
+    border-right:*/
+    border-radius: 4px; /* borde redondeado */
+    height: 100px;/*altura de la caja*/
+    width: 100px; /*ancho de la caja*/
+    color: #5757; /* color del texto */
+    background-color: #aaf;   
+}
+
+.box{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ccc;
+    border-radius: 2px;
+    border-top: solid 0px;
+    background-color: #fff;
+}
+
+.headbox{
+    padding: 10px;
+    border-bottom: solid 1px #eee;
+}
+
+.contenido{
+    padding: 10px;
+
+}
+
+.pie{
+    padding: 10px;
+    border-top: solid 1px #eee;
+}
+
+.btn-aceptar{
+    color: #fff;
+    background-color: #0090FF;
+    border: 0px;
+    padding: 5px;
+}
+
+.btn-cancelar{
+    color: #fff;
+    background-color: #aaa;
+    border: 0px;
+    padding: 5px;
+}
