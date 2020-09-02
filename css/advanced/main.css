@@ -1,0 +1,73 @@
+body {
+    background-color: #eee;
+}
+.anim{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #FFF;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    transition: width 0.3s;
+    transition-delay: 0.3s 0.5s;
+}
+
+.anim:hover{
+    transform: scale(1.05, 1.05) ;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.fondo {
+    height: 300px;
+     background-color: rgba(0,0,0,0.1); /*rojos, verdes, azules, opacidad*/
+    /*background-color: hsl(255, 100%, 0%, 0.3); color, opacidad,luminosidad, transparencia */
+    /* opacity: 1; opacidad de todo el div*/
+    background-image: url('https://placekitten.com/200/300');
+    background-repeat: no-repeat; /*repeat-x o repeat-y o */
+    background-position: right bottom; /* top o left */
+    background-attachment: fixed; /*fijar imagen*/
+    background-size: cover;
+    /*background: green url('https://placekitten.com/200/300') no-repeat left top fixed;  Todo en una sola linea respetando el orden*/
+}
+
+.back{
+    background-image: linear-gradient(red, yellow) ;/*usando gradientes: direccion, color1, color 2*/
+}
+
+.box{
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.3);/*inset al final para dar efecto de oprimido*/
+}
+
+.text{
+    color: #fff;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+}
+
+.caja{
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #FFF;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    transform: rotate(-45deg); /*translate(50px, 100px); o scale(2, 3); scaleY(2); scaleX(2);
+    skewX(25deg); skewY(-25px); skew(25deg, 10 deg)*/
+
+}
+
+.caja:hover{
+    transform: scale(1.05, 1.05);
+}
+
+.tdim{
+    position: relative;
+    left: 10px;
+    right: 10px;
+    top: 30px;
+    width: 40px;
+    background-color: darkcyan;
+    transform: rotateZ(45deg);
+}
+
