@@ -1,0 +1,70 @@
+/*
+Para practicar: cssgridgarden.com
+*/
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #eee;
+    margin: 0;
+    height: 100%;
+}
+
+.grid{
+    display: grid;/*inline-grid o grid*/
+    grid-template-rows: repeat(2, [row-inicio] 50px [row-fin]);/*minmax(100px, auto)*/ /*50px 100px*/ /*[row-1-inicio] 50px [row-2-inicio] 50px [row-3-fin]*/
+    grid-template-columns: [col-1-inicio] 1fr [col-2-inicio] 1fr [col-3-inicio] 1fr [col-4-inicio];/* 2 rem 3% 3fr 0px repeat(4, 50px)*/ /* 1fr 2fr 3fr */
+    grid-row-gap: 20px;/*espacio entre elementos*/
+    grid-column-gap: 10px; /* grid-gap: 20px 10px */
+}
+
+.element{
+    background-color: red;
+}
+
+.header{
+    grid-column-start: col-1-inicio;/*1 ... es otra forma de llavar al elemento*/
+    grid-column-end: col-4-fin;/*4*/
+    grid-row-start: row-inicio;/*1*/ /*row-1-inicio*/
+    grid-row-end: row-fin 3;/*3*/ /*row-3-fin*/
+    /*grid-column:1 / 4*/
+    /* grid-row: 1 / 3; */
+}
+
+.gridtwo{
+    /*background-color: red;*/
+    display: grid;
+    /*
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(4, 30px);
+    grid-template-rows: repeat(4, 30px);
+    grid-gap: 5px;
+    justify-content: space-around space-between space-evenly;
+    align-content: start end space-around space-between space-evenly;
+    */
+    grid-template-areas: "header header"
+                         "content sidebar"
+                         "footer footer";
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 1fr 200px;
+    grid-auto-rows: 140px; /*las filas no definidas tienen 140px*/
+    grid-auto-flow: row; /*column*/
+   /* justify-items: stretch; /*centrar horizontalmente start center end stretch*/
+   /* align-items: center; /*verticalmente start center stretch end*/
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+/*centrando vertical y horizontalmente un elemento
+.item-1{
+    justify-self: center;
+    align-self: center;
+}*/
